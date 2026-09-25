@@ -1,55 +1,43 @@
-# ==========================================
-# Creator: MrZyro
-# Telegram: @MrZyro_dev
-# GitHub: https://github.com/MrZyro
-# ==========================================
+# config.py
 
-import os
-from dotenv import load_dotenv
+# ── TELEGRAM APPLICATION AUTHORIZATION PRIVILEGES ──────────────────
+api_id = 34761583                          
+api_hash = "1191b8cc9198b6df421520b38d2c6a08"     
+TOKEN = "8827655892:AAG3VIk4t9Ufn0GDeXJmgTKSRb6tf0RSVbw"              
 
-# Load environment variables from .env file
-load_dotenv()
+# ── LOGGING LOGS AND ENGINE CHANNEL CONTROLS ───────────────────────
+BOT_LOGGING = -1003995362810               
+DATABASE_ID = -1004394687310               
+FORCE_JOIN = -1003999606442              
 
-# Telegram API credentials
-api_id = os.getenv("API_ID", "")
-api_hash = os.getenv("API_HASH", "")
+# ── MONGODB DATASTORE CONNECTIVITY STRINGS ──────────────────────────
+# Tumhara exact full database connection url lock kar diya hai
+mongo_url = "mongodb+srv://KOYUKIVALT:CHEATGRABBER@koyukivalt.k4pn8sh.mongodb.net/?appName=KOYUKIVALT"            
+backup_mongo_url = "mongodb+srv://KOYUKIVALT:CHEATGRABBER@koyukivalt.k4pn8sh.mongodb.net/?appName=KOYUKIVALT"     
+DB_NAME = "KOYUKIVALT"
 
-# Bot Token
-TOKEN = os.getenv("TOKEN", "")
+# ── NETWORK CHANNEL LINKS AND CONFIGURATIONS ────────────────────────
+SUPPORT_CHAT = "https://t.me/TEMPEST_MAIN"          
+UPDATE_CHAT = "https://t.me/OLD_HYDRA"           
+MUSJ_JOIN = "https://t.me/TEMPEST_MAIN"             
 
-# Logging & Logs Channel
-BOT_LOGGING = os.getenv("BOT_LOGGING", "")
-DATABASE_ID = os.getenv("DATABASE_ID", "")
-FORCE_JOIN = os.getenv("FORCE_JOIN", "")
+# ── ADMIN USER CONFIGURATIONS CLEARANCE KEYS ────────────────────────
+OWNER_ID = 7840014612                       
 
-# Database configuration
-mongo_url = os.getenv("MONGO_URL", "")
-backup_mongo_url = os.getenv("BACKUP_MONGO_URL", "")
-DB_NAME = os.getenv("DB_NAME", "WAIFUBOT")
+# ── THIRD PARTY INTEGRATION INDICES ───────────────────────────────
+IMGBB_API_KEY = "460e087bf6cffebc6e18ded3a2f5200b"      
 
-# Channels & Chats
-SUPPORT_CHAT = os.getenv("SUPPORT_CHAT", "")
-UPDATE_CHAT = os.getenv("UPDATE_CHAT", "")
-MUSJ_JOIN = os.getenv("MUSJ_JOIN", "")
-
-# Admin user configurations
-OWNER_ID = int(os.getenv("OWNER_ID", "0"))
-
-# ImgBB API Key
-IMGBB_API_KEY = os.getenv("IMGBB_API_KEY", "")
-
-# Media Configurations
+# ── STATIC ASSETS MEDIA VAULTS (FALLBACK LINK REPOSITORIES) ──────────
 START_MEDIA = [
-    os.getenv("START_MEDIA_1", "https://files.catbox.moe/zufhkk.mp4"),
-    os.getenv("START_MEDIA_2", "https://files.catbox.moe/zufhkk.mp4")
+    "https://files.catbox.moe/zufhkk.mp4",
+    "https://files.catbox.moe/zufhkk.mp4"
 ]
 
 PHOTO_URL = [
-    os.getenv("PHOTO_URL_1", "https://files.catbox.moe/7ccoub.jpg"),
-    os.getenv("PHOTO_URL_2", "https://files.catbox.moe/7ccoub.jpg")
+    "https://files.catbox.moe/7ccoub.jpg",
+    "https://files.catbox.moe/7ccoub.jpg"
 ]
 
 STATS_IMG = [
-    os.getenv("STATS_IMG", "https://files.catbox.moe/gknnju.jpg")
+    "https://files.catbox.moe/gknnju.jpg"
 ]
-
